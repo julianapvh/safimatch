@@ -1,0 +1,30 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Safimatch{% endblock %}</title>
+    <!-- Adicione aqui links para folhas de estilo específicas para o seu aplicativo móvel -->
+</head>
+<body>
+    <header>
+        <!-- Aqui você pode adicionar elementos comuns ao cabeçalho, como um título -->
+        <h1>Safimatch</h1>
+    </header>
+
+    <main>
+        <!-- O conteúdo da página será inserido aqui -->
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Aqui você pode adicionar elementos comuns ao rodapé -->
+        <p>&copy; 2024 Safimatch. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Adicione aqui scripts específicos para o seu aplicativo móvel -->
+</body>
+</html>

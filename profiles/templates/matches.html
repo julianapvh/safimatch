@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Seus Matches</h2>
+  {% for match in matches %}
+    <p>{{ match.user.username }}, {{ match.age }}, {{ match.interests }}</p>
+  {% endfor %}
+{% endblock %}

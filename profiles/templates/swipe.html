@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe</title>
+</head>
+<body>
+    <h1>Swipe Profile</h1>
+    <p>Username: {{ swiped_profile.user.username }}</p>
+    <!-- Add more profile details here -->
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="like" value="true">
+        <button type="submit">Like</button>
+    </form>
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="like" value="false">
+        <button type="submit">Dislike</button>
+    </form>
+</body>
+</html>
