@@ -6,7 +6,8 @@ from django.contrib.auth.decorators import login_required
 from .utils import find_matches
 from .models import Profile, Swipe
 from django.contrib.auth.forms import AuthenticationForm
-from .forms import UserRegisterForm, ProfileUpdateForm, ProfileForm
+from .forms import UserRegisterForm, ProfileUpdateForm
+from .forms import ProfileForm
 from django.contrib import messages
 
 @login_required
